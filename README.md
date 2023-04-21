@@ -1,4 +1,6 @@
-# Jaseci Ninja Notes 
+# [Jaseci](https://docs.jaseci.org/) Ninja Notes 
+
+- *These are only my notes, not official docs here, official docs are found in the link provided above*
 
 <p align="left"> 
 <img src="https://komarev.com/ghpvc/?username=jaseci-ninja-notes&label=Profile%20views&color=f79952&style=flat" alt="jaseci-ninja-notes" /> 
