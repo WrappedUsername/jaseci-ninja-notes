@@ -10,7 +10,7 @@ architype  edit      jac     login   object  script      walker
 ```yml
 Command:
 ```
-- actions
+# actions
 
 ```bash
 @jaseci > help actions
@@ -32,7 +32,7 @@ Commands:
 ```yml
 Command:
 ```
-- alias
+# alias
   
 ```bash
 @jaseci > help alias
@@ -53,7 +53,7 @@ Commands:
 ```yml
 Command:
 ```
-- apply
+# apply
 
 ```bash
 @jaseci > help apply
@@ -71,7 +71,7 @@ Commands:
 ```yml
 Command:
 ```
-- architype
+# architype
 
 ```bash
 @jaseci > help architype
@@ -94,7 +94,7 @@ Commands:
 ```yml
 Command:
 ```
-- booktool
+# booktool
 
 ```bash
 @jaseci > help booktool
@@ -110,7 +110,7 @@ Options:
 ```yml
 Command:
 ```
--
+#
 
 ```bash
 
@@ -119,7 +119,7 @@ Command:
 ```yml
 Command:
 ```
--
+#
 
 ```bash
 
@@ -128,7 +128,7 @@ Command:
 ```yml
 Command:
 ```
--
+#
 
 ```bash
 
@@ -137,7 +137,7 @@ Command:
 ```yml
 Command:
 ```
--
+#
 
 ```bash
 
