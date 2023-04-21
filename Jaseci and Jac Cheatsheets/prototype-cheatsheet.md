@@ -1,4 +1,4 @@
-# Jaseci Cheatsheet
+# Jaseci Cheatsheet - Work In Progess
 
 - Jaseci Runtime CLI Commands - I am calling @jaseci > help (the command) in my Ubuntu terminal.
 
