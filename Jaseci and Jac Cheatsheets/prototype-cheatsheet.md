@@ -17,6 +17,7 @@ Command:
 ```bash
 @jaseci > help actions
 Usage: actions [OPTIONS] COMMAND [ARGS]...
+example: actions load module jac_nlp.use_qa
 
   Group of `actions` commands
 
