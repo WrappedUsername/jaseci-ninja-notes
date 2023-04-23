@@ -4,10 +4,10 @@
 
 | Commands| | | | | | | |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| actions | booktool | global | jsorc | logout | prometheus | sentinel | wapi |
-| alias | clear | graph | load | ls | publogin | service |
-| apply | config | info | logger | master | reset | user |
-| architype | edit | jac | login | object | script | walker |
+| actions | booktool | global | jsorc | logout | prometheus | sentinel | walker |
+| alias | clear | graph | load | ls | publogin | service | wapi |
+| apply | config | info | logger | master | reset | studio | webhook |
+| architype | edit | jac | login | object | script | user |
 
 ```yml
 Command:
@@ -516,6 +516,21 @@ Commands:
 ```yml
 Command:
 ```
+# studio
+
+```bash
+@jaseci > help studio
+Usage: studio [OPTIONS]
+
+  Launch Jaseci Studio
+
+Options:
+  --help  Show this message and exit.
+```
+
+```yml
+Command:
+```
 # user
 
 ```bash
@@ -583,3 +598,21 @@ Options:
   --help              Show this message and exit.
 ```
 
+```yml
+Command:
+```
+# webhook
+
+```bash
+@jaseci > help webhook
+Usage: webhook [OPTIONS]
+
+  Handle webhook logic
+
+Options:
+  -o, --output TEXT   Filename to dump output of this command call.
+  -_raw_req_ctx TEXT
+  -_req_ctx TEXT
+  -provider TEXT      [required]
+  --help              Show this message and exit.
+```
