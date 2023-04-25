@@ -40,8 +40,8 @@ title: 7-tuple (N, E, C, s, t, cN , cE) Jaseci Graph
 classDiagram
   N --> E : s = source 
   N --> E : t = target
-  cN <-- N : cN = nodes to context
-  cE <-- E : cE = edges to context
+  C <-- N : cN = nodes to context
+  C <-- E : cE = edges to context
   class N{
     +nodes in graph
   }
