@@ -38,17 +38,17 @@ Jaseci Graph described as a 7-tuple (N, E, C, s, t, cN , cE ), where:
 title: 7-tuple (N, E, C, s, t, cN , cE) Jaseci Graph
 ---
 classDiagram
-  N --> E : s = source 
-  N --> E : t = target
-  C <-- N : cN = nodes to context
-  C <-- E : cE = edges to context
+  N --> E : s = maps the source node to an edge
+  N --> E : t = maps the target node to an edge
+  C <-- N : cN = maps the nodes to context
+  C <-- E : cE = maps the edges to context
   class N{
-    +set of nodes in graph
+    +the set of nodes in graph
   }
   class E{
-    +set of edges in graph
+    +the set of edges in graph
   }
   class C{
-    +set of all contexts
+    +the set of all contexts
   }
 ```
