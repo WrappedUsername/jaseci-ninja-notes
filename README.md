@@ -43,10 +43,10 @@ classDiagram
   C <-- N : cN = nodes to context
   C <-- E : cE = edges to context
   class N{
-    +nodes in graph
+    +set of nodes in graph
   }
   class E{
-    +edges in graph
+    +set of edges in graph
   }
   class C{
     +set of all contexts
