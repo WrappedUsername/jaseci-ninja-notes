@@ -30,7 +30,14 @@ wsl -l -v
 wsl --install
 ```
 
-- Next restart your computer and open Ubuntu terminal, because we need to create a user so we are not using root in Ubuntu (very important step)!
+- Next restart your computer and open Ubuntu terminal
+- Once opened again, make sure Ubuntu is updated, and feel free to do this regularly,
+
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+- We need to create a user so we are not using root in Ubuntu (very important step)!
   - If you get this `WARNING` message when installing using pip 
 
 ```bash
