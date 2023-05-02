@@ -71,7 +71,7 @@ login your-username-here
 ## TODO - Work In Progress
 
 ```yml
-Create directory in Ubuntu:
+Create new project directory in Ubuntu:
 ```
 
 - Create a new folder for your new jaseci project using `mkdir`,
