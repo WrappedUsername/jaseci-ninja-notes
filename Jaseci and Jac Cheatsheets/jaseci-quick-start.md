@@ -95,17 +95,17 @@ root@YourComputerName:~# chown -R your-username-here:your-username-here /home/yo
 Create new project directory in Ubuntu:
 ```
 
-- Create a new folder for your new jaseci project using `mkdir`,
-- Use `ls` command for a list of current directories and files in current working directory.
+- Create an virtual enviroment `.venv` with `virtualenv venv`
 
-- Use `cd` command to change directory to the new folder you choose to create,
-- After that use `code .` to launch VS Code using WSL; Ubuntu while opening the folder you just created.
-  - Note I have not found any other way to open both the folder from Ubuntu and WSL:Ubuntu in VS Code, and you have to have them both using Ubuntu. 
+```bash
+virtualenv venv
+```
 
-- VS Code will automatically launch in a new window, it should look like this, notice in the far left corner in blue it says WSL:Ubuntu, this is what we want!
+- Next rename the folder to `.venv` and activate it with `source .venv/bin/activate`,
 
-- VS Code must be using WSL if you are using Windows. 
-- You can also see the folder is open from the correct place at the top of VS Code, it needs to be from Ubuntu also.
+```bash
+source .venv/bin/activate
+```
 
 - Create front end using a front-end frame work of your choice, I will be using Angular 15, but Next 13 would be fine too:
 
