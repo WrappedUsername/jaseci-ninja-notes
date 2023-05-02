@@ -1,20 +1,67 @@
-# [Jaseci](https://www.jaseci.org/) Quick Start for Windows - Not Official Docs
+# [Jaseci](https://www.jaseci.org/) Quick Start for WSL using Ubuntu - Not Official Docs
 
-- [Official Jaseci Installation Guide Found Here](https://docs.jaseci.org/docs/docs/getting_started/installation)
+- *These are only my notes, not official docs here, official docs are found in the link provided above*
+
+- and [Official Jaseci Installation Guide Found Here](https://docs.jaseci.org/docs/docs/getting_started/installation)
+
+<p align="left"> 
+<img src="https://komarev.com/ghpvc/?username=jaseci-quick-start&label=Profile%20views&color=f79952&style=flat" alt="jaseci-quick-start" /> 
+</p>
 
 To run commands for Jaseci we need a terminal that accepts bash arguments. 
 - The official Jaseci docs recommend using the Ubuntu terminal that comes as the default with WSL.
-- To install WSL, first check if WSL is installed by running the following the Windows powershell terminal,
+- To install WSL, first check if WSL is installed by running the following command in Windows powershell terminal,
 
 ```bash
 wsl -l -v
 ```
 
+- If nothing is returned like this,
+
+```powershell
+  NAME          STATE           VERSION
+* kali-linux    Stopped         2
+  Ubuntu        Running         2
+```
+
+- Run this in Windows powershell terminal to install WSL,
+
 ```bash
 wsl --install
 ```
 
-Next create a user for your Ubuntu terminal (this is not in the official Jaseci docs but they do reference these [Microsoft Docs](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password).
+- Next restart your computer and open Ubuntu terminal, because we need to create a user so we are not using root in Ubuntu (very important step)!
+  - If you get this `WARNING` message when installing using pip 
+
+```bash
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+```
+
+- This means you are using root, and should consider creating a user in Ubuntu, we can do this by creating a user like this,
+
+```yml
+Next create a user for your Ubuntu terminal, the official Jaseci docs reference these docs: 
+```
+
+[Microsoft Docs for WSL setup](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password)
+
+- But if you happen to miss that step no worries! 
+  - If you did not setup up a user that way, you can setup a new user in your Ubuntu terminal,
+
+- Launch Ubuntu terminal, and enter this command,
+
+```bash
+sudo adduser your-username-here
+```
+
+- It will prompt you to enter a password, and you will not be able to see the password as you enter it, but it is there!
+- Once you have created your new user home, you can login using the `login` command,
+
+```bash
+login your-username-here
+```
+
+## TODO - Work In Progress
 
 ```yml
 Create directory in Ubuntu:
