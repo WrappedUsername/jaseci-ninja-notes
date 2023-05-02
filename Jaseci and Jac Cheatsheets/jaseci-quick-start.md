@@ -37,14 +37,14 @@ wsl --install
 sudo apt update && sudo apt upgrade
 ```
 
-- We need to create a user so we are not using root in Ubuntu (very important step)!
+- You need to create a user so you are not using root in Ubuntu (very important step, don't feel bad I missed this step too, lol)!
   - If you get this `WARNING` message when installing using pip 
 
 ```bash
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
 ```
 
-- This means you are using root, and should consider creating a user in Ubuntu, we can do this by creating a user like this,
+- This means you are using root, and you should consider creating a user in Ubuntu, we can do this by creating a user like this,
 
 ```yml
 Next create a user for your Ubuntu terminal, the official Jaseci docs reference these docs: 
