@@ -37,6 +37,13 @@ wsl --install
 sudo apt update && sudo apt upgrade
 ```
 
+```yml
+Next create a user for your Ubuntu terminal, the official Jaseci docs reference these docs: 
+```
+
+[Microsoft Docs for WSL setup](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password)
+
+- But if you happen to miss that step no worries! 
 - You need to create a user so you are not using root in Ubuntu (very important step, don't feel bad I missed this step too, lol)!
   - If you get this `WARNING` message when installing using pip 
 
@@ -46,13 +53,6 @@ WARNING: Running pip as the 'root' user can result in broken permissions and con
 
 - This means you are using root, and you should consider creating a user in Ubuntu, we can do this by creating a user like this,
 
-```yml
-Next create a user for your Ubuntu terminal, the official Jaseci docs reference these docs: 
-```
-
-[Microsoft Docs for WSL setup](https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password)
-
-- But if you happen to miss that step no worries! 
   - If you did not setup up a user that way, you can setup a new user in your Ubuntu terminal,
 
 - Launch Ubuntu terminal, and enter this command,
