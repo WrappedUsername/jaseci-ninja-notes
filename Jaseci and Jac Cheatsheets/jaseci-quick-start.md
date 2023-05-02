@@ -89,12 +89,39 @@ your-project-folder-name-will-no-longer-be-here
 root@YourComputerName:~# chown -R your-username-here:your-username-here /home/your-username-here/your-project-folder-name-here
 ```
 
-## TODO - Work In Progress
-
 ```yml
 Create new project directory in Ubuntu:
 ```
 
+- Create front end using a front-end frame work of your choice, I will be using Angular 15, but Next 13 would be fine too,
+- In the root of Ubuntu run this command,
+
+
+```bash
+npm install -g @angular/cli
+```
+
+- After that login to your user home, it should look something like this
+
+```bash
+your-username-here@YourComputerName:~$
+```
+
+- Create a new project by running `ng new your-new-project-name-here`
+
+```bash
+your-username-here@YourComputerName:~$ ng new your-new-project-name-here
+```
+
+## Open a new VS Code window from task bar or Start menu, connect to WSL using Distro,
+
+![Screenshot 2023-05-02 174818](https://user-images.githubusercontent.com/104662990/235808679-d7010b42-89e9-4275-8f6d-3db0887f7f72.png)
+
+- Open the new project folder from here,
+
+![Screenshot 2023-05-02 174524](https://user-images.githubusercontent.com/104662990/235808394-2f194548-db8b-4430-9ffe-2feac70c8a8a.png)
+
+- Open a new terminal in VS Code and login to your user home, and `cd` into the project directory, 
 - Create an virtual enviroment `.venv` with `virtualenv venv`
 
 ```bash
@@ -107,9 +134,13 @@ virtualenv venv
 source .venv/bin/activate
 ```
 
-- Create front end using a front-end frame work of your choice, I will be using Angular 15, but Next 13 would be fine too:
-
 - Continue to install all required tools and dependencies,
+
+```bash
+yarn
+```
+
+## TODO - Work In Progress
 
 - Create desired folder structure, according to your needs,
 
