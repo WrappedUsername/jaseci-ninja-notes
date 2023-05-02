@@ -51,11 +51,7 @@ Next create a user for your Ubuntu terminal, the official Jaseci docs reference 
 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
 ```
 
-- This means you are using root, and you should consider creating a user in Ubuntu, we can do this by creating a user like this,
-
-  - If you did not setup up a user that way, you can setup a new user in your Ubuntu terminal,
-
-- Launch Ubuntu terminal, and enter this command,
+- This means you are using root, enter this command,
 
 ```bash
 sudo adduser your-username-here
@@ -66,6 +62,31 @@ sudo adduser your-username-here
 
 ```bash
 login your-username-here
+```
+
+- if you need to move files from your Ubuntu root, it's no big deal, just run these commands in Ubuntu root for each folder that you need to move to your new user home,
+
+```bash
+root@YourComputerName:~# mv -v ~/your-project-folder-name-here/ /home/your-username-here/your-project-folder-name-here/
+```
+
+- You should get a return like this,
+
+```bash
+renamed '/root/your-project-folder-name-here/' -> '/home/your-username-here/your-project-folder-name-here/'
+```
+
+- You can check to see if it still listed in your root with this command,
+
+```bash
+root@YourComputerName:~# ls
+your-project-folder-name-will-no-longer-be-here
+```
+
+- After moving this folder into your new user home directory, you should change ownership like this,
+
+```bash
+root@YourComputerName:~# chown -R your-username-here:your-username-here /home/your-username-here/your-project-folder-name-here
 ```
 
 ## TODO - Work In Progress
