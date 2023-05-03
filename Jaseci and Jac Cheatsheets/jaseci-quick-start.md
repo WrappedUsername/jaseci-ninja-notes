@@ -64,6 +64,32 @@ sudo adduser your-username-here
 login your-username-here
 ```
 
+## Install Jaseci
+
+- Install Jaseci dependencies
+
+```bash
+apt-get install python3.10-dev python3-pip git g++ build-essential pkg-config cmake
+```
+
+- Install and upgrade pip to the latest
+
+```bash
+pip install --upgrade pip
+```
+
+- Install Jaseci
+
+```bash
+pip install jaseci
+```
+
+- Test Jaseci install, o ensure our installation is working run,
+
+```bash
+jsctl -m
+```
+
 - if you need to move files from your Ubuntu root, it's no big deal, just run these commands in Ubuntu root for each folder that you need to move to your new user home,
 
 ```bash
