@@ -90,36 +90,9 @@ pip install jaseci
 jsctl -m
 ```
 
-- if you need to move files from your Ubuntu root, it's no big deal, just run these commands in Ubuntu root for each folder that you need to move to your new user home,
+## Create new project directory in Ubuntu, using a modern front-end framework
 
-```bash
-root@YourComputerName:~# mv -v ~/your-project-folder-name-here/ /home/your-username-here/your-project-folder-name-here/
-```
-
-- You should get a return like this,
-
-```bash
-renamed '/root/your-project-folder-name-here/' -> '/home/your-username-here/your-project-folder-name-here/'
-```
-
-- You can check to see if it still listed in your root with this command,
-
-```bash
-root@YourComputerName:~# ls
-your-project-folder-name-will-no-longer-be-here
-```
-
-- After moving this folder into your new user home directory, you should change ownership like this,
-
-```bash
-root@YourComputerName:~# chown -R your-username-here:your-username-here /home/your-username-here/your-project-folder-name-here
-```
-
-```yml
-Create new project directory in Ubuntu:
-```
-
-- Create front end using a front-end frame work of your choice, I will be using Angular 15, but Next 13 would be fine too,
+- Create the front-end of your AI website, using a front-end framework of your choice, I will be using Angular 15, but Next 13 would be fine too,
 - In the root of Ubuntu run this command,
 
 
@@ -184,6 +157,33 @@ yarn
 - Keep up the good work and continue building your project from here!
 
 - If you need help with getting your Jaseci project started, please join the Discord of fellow Jaseci Ninja programmers, I'm sure someone will be more than happy to help!
+
+## Bonus section, if you need help moving a folder from root to your new Ubuntu user home directory,
+
+- if you need to move files from your Ubuntu root, it's no big deal, just run these commands in Ubuntu root for each folder that you need to move to your new user home,
+
+```bash
+root@YourComputerName:~# mv -v ~/your-project-folder-name-here/ /home/your-username-here/your-project-folder-name-here/
+```
+
+- You should get a return like this,
+
+```bash
+renamed '/root/your-project-folder-name-here/' -> '/home/your-username-here/your-project-folder-name-here/'
+```
+
+- You can check to see if it still listed in your root with this command,
+
+```bash
+root@YourComputerName:~# ls
+your-project-folder-name-will-no-longer-be-here
+```
+
+- After moving this folder into your new user home directory, you should change ownership like this,
+
+```bash
+root@YourComputerName:~# chown -R your-username-here:your-username-here /home/your-username-here/your-project-folder-name-here
+```
 
 
 
