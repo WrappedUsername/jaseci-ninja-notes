@@ -160,6 +160,11 @@ virtualenv venv
 source .venv/bin/activate
 ```
 
+Your terminal in VS Code from your poject folder should look something like this,
+
+![Screenshot 2023-05-02 192933](https://user-images.githubusercontent.com/104662990/235817786-c6aace5f-8c6c-44b7-b861-548d9681779e.png)
+
+
 - Continue to install all required tools and dependencies,
 
 ```bash
