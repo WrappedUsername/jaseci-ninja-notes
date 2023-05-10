@@ -185,6 +185,46 @@ your-project-folder-name-will-no-longer-be-here
 root@YourComputerName:~# chown -R your-username-here:your-username-here /home/your-username-here/your-project-folder-name-here
 ```
 
+## Jaseci Quick Start
+
+- Create .venv environment,
+
+```bash
+virtualenv venv
+```
+
+- Rename venv file to .venv
+- Activating `.venv`
+
+```bash
+source .venv/bin/activate
+```
+
+- Start Redis server
+
+```bash
+sudo service redis-server restart
+```
+
+- Start Jaseci runtime
+
+```bash
+jsctl -m
+```
+
+- Create graph
+
+```bash
+graph create -set_active true
+```
+
+- Compile the project
+
+```bash
+sentinel register main.jac
+```
+
+
 
 
 
